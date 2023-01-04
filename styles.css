@@ -73,14 +73,14 @@
 .active-link{
     margin-left:0.5rem;
     margin-right:2rem;
-    color:black;
+    color:darkcyan;
     font-family:"Open Sans";
     font-weight:400;
     font-size:1.5rem;
 }
 
 .active-link:hover{
-    color:rgb(113, 147, 113);
+    color:darkgoldenrod;
 }
 .header-div{
     font-family:"Open Sans";
@@ -96,7 +96,13 @@
     justify-content:center;
     align-items: center;
     height:100vh;
-  
+    opacity:0;
+}
+
+
+.title-active{
+    opacity:100;
+    transition: all 1s;
 }
 .title>h1{
     font-family:"Open Sans";
@@ -120,3 +126,67 @@
 .btn:hover{
     background-color:darkgoldenrod;
 }
+
+/* second section */ 
+
+ .img-part,.text-part{
+    width:40%;
+} 
+.second-pic{
+   width:100%;
+   object-fit: cover;
+}
+
+.about-oneder{
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-size:3.5rem;
+    color:darkcyan;
+    text-align: center;
+    padding: 6rem 0;
+    opacity:0;
+   
+}
+.oneder-active{
+    opacity:100;
+    transition: all 1.5s;
+}
+.flex{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:10rem;
+    padding-top:10rem;
+    opacity:0;
+}
+.flex-active{
+    opacity:100;
+    transition: all 2s;
+    padding-top:3rem;
+}
+h3{
+    font-size:28px;
+    font-family:"Open Sans";
+    font-weight:bold;
+    color:black;
+    margin-bottom:24px;
+}
+
+
+.text{
+    font-size:16px;
+    font-family:"Open Sans";
+    font-weight:normal;
+    color:rgb(26, 27, 26);
+    margin-bottom:15px;
+    letter-spacing: 0.5px;
+}
+
+
+span{
+    font-size:24px;
+    font-weight: bold;
+    color:darkcyan;
+    margin-right:2rem;
+}
+
