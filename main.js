@@ -46,7 +46,7 @@ window.onscroll = function(){
      if(top>=1600){
     wholeTeam.classList.add('opacity');
      }
-     else if(top<=1600){
+     else if(top<=1500){
       wholeTeam.classList.remove('opacity');
      }
   setInterval(opacity(), 2000)
