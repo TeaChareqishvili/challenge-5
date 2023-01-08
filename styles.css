@@ -9,6 +9,7 @@
  body{
     width:100vw;
     height:100vh;
+    background-color:rgb(242, 240, 240);
 } 
 
  /* section 1 */
@@ -35,6 +36,7 @@
    align-items: center; 
    height:6rem;
    transition:all 0.5s;
+   z-index:2;
 }
 
 .active{
@@ -155,13 +157,13 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom:10rem;
+     padding-bottom:2rem; 
     padding-top:10rem;
     opacity:0;
 }
 .flex-active{
     opacity:100;
-    transition: all 2s;
+    transition: all 1s;
     padding-top:3rem;
 }
 h3{
@@ -190,3 +192,138 @@ span{
     margin-right:2rem;
 }
 
+/* third section*/
+
+.team-section{
+    padding-bottom:4rem;
+    border-bottom:solid 2px rgb(56, 68, 122,0.5);
+
+}
+
+.about-team{
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-size:3.5rem;
+    color:darkcyan;
+    text-align: center;
+      padding: 8rem 0 0 0;  
+    opacity:0;
+   
+}
+
+.about-team-active{
+   opacity:100;
+   padding-top:3rem;
+   transition:all 1s;
+}
+
+
+.about-team-p{
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-size:1.5rem;
+    color:dimgrey;
+    margin:auto;
+    width:60%;
+    text-align: center;
+    padding-top:3rem;
+    padding-bottom:4rem;
+    opacity:0;   
+    letter-spacing: 1.3px;
+    margin-bottom:3rem;
+}
+
+.about-team-p-active{
+    opacity:100;
+    padding-top:1.5rem;
+    transition:all 1.5s;
+}
+
+.whole-team{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity:0.1;
+    transition:all 3s;
+   
+}
+
+.opacity{
+    opacity:1;
+    transition: all 3s;
+}
+
+.team{
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+
+
+.team-img{
+   width:330px;
+   height:330px;
+   margin-top:3rem;
+   position:relative;
+   
+  
+}
+.person{
+    width:100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.team-img:hover .back-slide{
+     width:55px; 
+    opacity:100;
+    transition: all 0.8s;
+}
+
+
+.fa{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   color:white;
+   width:20px;
+   height:20px;
+   margin:2rem 0;
+   opacity:0;
+}
+.fa:hover{
+    color:crimson;
+}
+.team-img:hover .fa{
+  opacity:100;
+  width:40px;
+  height:40px;
+  transition: all 2s;
+ 
+}
+
+.back-slide{
+    width:0;
+    opacity:0;
+    height:330px;
+    background-color: blue;
+    position: absolute;
+    transition: all 0.8s;
+}
+
+.team-name{
+    font-family:"Open Sans";
+    font-weight:bold;
+    color:rgb(56, 68, 122);
+    padding-top:1rem;
+    padding-bottom:0.5rem;
+    font-size:1.5rem;
+}
+
+.team-position{
+    font-family:"Open Sans";
+    font-weight:bold;
+    color:rgb(56, 68, 122,0.7);
+    font-size:1rem;
+}
