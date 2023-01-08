@@ -361,3 +361,26 @@ span{
     padding:0 1.5rem;
     margin-bottom:2rem;
 }
+.image-box{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.image-web-small{
+    width:210px;
+    height:230px;
+}
+.image-web-smallest{
+    width:210px;
+    height:150px;
+}
+
+.port-img{
+    width:100%;
+    object-fit: cover;
+}
+
+.image-web-medium{
+    width:209px;
+    height:290px;
+}
