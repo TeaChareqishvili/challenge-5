@@ -1,3 +1,67 @@
+// portfolio section //
+
+const all = document.getElementById('all');
+const web = document.getElementById('web');
+const design = document.getElementById('design');
+const brand = document.getElementById('brand');
+
+const imageWeb = document.querySelectorAll('.web');
+const imageDesign = document.querySelectorAll('.design');
+const imageBrand = document.querySelectorAll('.brand');
+
+
+
+web.addEventListener('click', ()=>{
+  imageWeb.forEach((element)=>{
+    element.classList.remove('none');
+    element.classList.add('block');
+  })
+  imageDesign.forEach((e)=>{
+    e.classList.remove('block');
+    e.classList.add('none');
+  })
+    
+  imageBrand.forEach((elem)=>{
+    elem.classList.remove('block');
+    elem.classList.add('none');
+  })
+
+})
+
+design.addEventListener('click',()=>{
+  imageWeb.forEach((element)=>{
+    element.classList.remove('block');
+    element.classList.add('none');
+  })
+  imageDesign.forEach((e)=>{
+    e.classList.remove('none');
+    e.classList.add('block');
+  })
+    
+  imageBrand.forEach((elem)=>{
+    elem.classList.remove('block');
+    elem.classList.add('none');
+  })
+})
+
+brand.addEventListener('click',()=>{
+  imageBrand.forEach((elem)=>{
+    elem.classList.remove('none');
+    elem.classList.add('block');
+  })
+  imageDesign.forEach((e)=>{
+    e.classList.remove('block');
+    e.classList.add('none');
+  })
+  imageWeb.forEach((element)=>{
+    element.classList.remove('block');
+    element.classList.add('none');
+  })
+})
+
+
+
+
 // first section//
 
 const header = document.querySelector('.header');
@@ -9,6 +73,8 @@ const flex = document.querySelector('.flex');
 const aboutTeam = document.querySelector('.about-team');
 const teamParagraph = document.querySelector('.about-team-p');
 const wholeTeam = document.querySelector('.whole-team')
+
+
 
 window.onscroll = function(){
      let top = window.scrollY;
@@ -49,6 +115,8 @@ window.onscroll = function(){
      else if(top<=1500){
       wholeTeam.classList.remove('opacity');
      }
+
+   
   setInterval(opacity(), 2000)
 
 

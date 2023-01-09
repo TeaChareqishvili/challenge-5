@@ -9,7 +9,7 @@
  body{
     width:100vw;
     height:100vh;
-    background-color:rgb(242, 240, 240);
+    background-color:rgb(233, 231, 231);
 } 
 
  /* section 1 */
@@ -340,31 +340,42 @@ span{
     text-align: center;
 }
 
-.portfolio-link{
-    font-family:"Open Sans";
-    font-size:1.3rem;
-    color:rgb(56, 68, 122);
-    background-color:rgb(203, 202, 202);
-    border-radius:10px;
-    padding:7px 15px;
-}
-
-.portfolio-link:hover{
-   
- background-color:darkcyan;
- color:white;
-}
-
-.portfolio-ul,.portfolio-li{
+.buttons{
     display:flex;
     justify-content: center;
-    padding:0 1.5rem;
-    margin-bottom:2rem;
+    align-items: center;
+    padding-bottom:2rem;
+
+}
+
+.portfolio-btn{
+    background-color:rgb(199, 199, 199);
+    color:rgb(56, 68, 122);
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+    font-weight: normal;
+    margin:0 15px;
+    padding:10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+
+}
+.portfolio-btn:hover{
+    background-color: darkcyan;
+    color:white;
+}
+
+
+.container{
+    max-width:2560px;
+    width:80%;
+    margin:auto;
 }
 .image-box{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .image-web-small{
     width:210px;
@@ -378,9 +389,91 @@ span{
 .port-img{
     width:100%;
     object-fit: cover;
+    padding:10px;
 }
 
 .image-web-medium{
     width:209px;
     height:290px;
+}
+
+.image-web-bigger{
+    width:209px;
+    height:314px;
+}
+
+.none{
+   display: none;
+    
+ 
+}
+
+.block{
+    display:block;
+   
+}
+
+/* our services */
+
+.our-services{
+    background-color:#ccc;
+    margin-top:10rem;
+   
+}
+
+.services-title{
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-size:3.5rem;
+    color:darkcyan;
+    padding:4rem 0;
+    text-align: center;
+}
+
+
+
+.icon{
+    width:60px;
+    height:60px;
+    
+   
+}
+
+.service-name{
+    font-family:"Open Sans";
+    font-weight:bold;
+    font-size:2rem;
+    color:darkgoldenrod;
+    padding:5px 0;
+}
+
+.about-service{
+    font-family:"Open Sans";
+    font-weight: normal;
+    letter-spacing: 1.1px;;
+    font-size:1.6rem;
+    color:rgb(127, 94, 10);
+    width:350px;
+    padding-bottom:10px;
+}
+
+.service-link{
+    color:black;
+    font-size:1rem;
+    font-family:"Open Sans";
+   
+}
+
+.service-link:hover{
+    color:darkcyan;
+}
+ .service{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+} 
+.each-service{
+    padding:40px 0;
 }
