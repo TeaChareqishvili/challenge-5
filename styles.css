@@ -477,3 +477,79 @@ span{
 .each-service{
     padding:40px 0;
 }
+
+/* testimonial section */
+
+#testimonials{
+    background-color:rgb(233, 231, 231);
+}
+
+.content-block{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    visibility: hidden;
+    float:right;
+
+    
+}
+
+.testimonial-text{
+    font-family:"Open Sans";
+    font-weight: normal;
+    font-style: italic;
+    font-size:1.5rem;
+    letter-spacing: 1.4px;
+    width:60%;
+    text-align: center;
+    color:black;
+    opacity:0.7;
+}
+
+.testimonial-img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+   
+}
+.testimonial-person-name{
+    margin:3rem 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-name{
+    font-family:"Open Sans";
+    font-weight: bold;
+    font-size:1rem;
+    color:rgb(56, 68, 122);
+    padding-left:1rem;
+}
+
+
+.test-btn{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background-color:rgb(195, 193, 193);
+    margin:0 0.7rem;
+    cursor: pointer;
+}
+
+.test-btn:hover{
+    background-color:darkcyan;
+}
+.slide-block{
+   display:flex;   
+}
+.slider{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility:visible;
+     float:left; 
+}
