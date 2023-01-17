@@ -490,9 +490,12 @@ span{
     justify-content: center;
     align-items: center;
     display:none;
-    visibility: hidden;
-    float:right;
-
+  
+    animation-name: moveMe;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+   
     
 }
 
@@ -550,6 +553,16 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    visibility:visible;
-     float:left; 
+
+     
+    
+}
+
+@keyframes moveMe{
+    0%{
+        transform:skewX(-50deg) translate(-500px);
+    }
+    100%{
+        transform:skew(0deg);
+    }
 }

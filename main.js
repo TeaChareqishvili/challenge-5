@@ -78,7 +78,7 @@ const wholeTeam = document.querySelector('.whole-team')
 
 window.onscroll = function(){
      let top = window.scrollY;
-      console.log(top);
+      // console.log(top);
      if(top>=100){
        header.classList.add('active');
        headerDiv.style.color='darkcyan';
@@ -126,3 +126,35 @@ window.onscroll = function(){
     title.classList.add('title-active');
  }
 
+
+
+ // testimonial section 
+
+ const testimonialButton = document.querySelectorAll('.test-btn');
+ const contentBlock = document.querySelectorAll('.content-block');
+
+ let activeIndex=0;
+
+function atctiveButtons(){
+ 
+  testimonialButton.forEach((btn,index)=>{
+    btn.addEventListener('click',()=>{
+     activeIndex=index;
+     changeSlide();
+    })
+   
+  })
+}
+ 
+ 
+ function changeSlide(){
+  contentBlock.forEach((active,index)=>{
+    if(activeIndex===index){
+      active.classList.add('slider');
+    } else{
+      active.classList.remove('slider');
+    }
+  })
+ }
+
+ atctiveButtons();
