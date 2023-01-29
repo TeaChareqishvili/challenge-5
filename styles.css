@@ -481,7 +481,7 @@ span{
 /* testimonial section */
 
 #testimonials{
-    background-color:rgb(233, 231, 231);
+    background-color:rgb(244, 241, 241);
 }
 
 .content-block{
@@ -565,4 +565,92 @@ span{
     100%{
         transform:skew(0deg);
     }
+}
+
+
+/* section prices */ 
+
+.prices{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price-div{
+    width:25%;
+    background-color:white;
+    border-radius:12px;
+    padding:1rem;
+    
+}
+
+.price-type{
+    font-family:"Open Sans";
+    font-weight: 800;
+    font-size:2.5rem;
+    align-self: center;
+    padding:1rem 0;
+    color:rgb(56, 68, 122);
+
+}
+
+.price{
+    font-family:"Open Sans";
+    font-weight: 800;
+    font-size:2.5rem;
+    color:rgb(58, 93, 159);
+    align-self: center;
+    padding:0 0 1rem 0;
+}
+
+em{
+    color:grey;
+    opacity:0.5;
+    font-size:1rem;
+    font-family: 'Open Sans';
+    font-weight: normal;
+    align-self: center;
+}
+
+.price-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.price-includes{
+    font-family: 'Open Sans';
+    font-weight: normal;
+    color:rgb(56, 68, 122);
+    padding:0.5rem 0;
+    font-size:1rem;
+}
+
+.erased{
+    font-family: 'Open Sans';
+    font-weight: normal;
+    color:grey;
+    opacity:0.5;
+    padding:0.5rem 0;
+    font-size:1rem;
+    text-decoration: line-through;
+   
+}
+
+.opacity{
+    color:grey;
+    opacity:0.5;
+    text-decoration:none;
+   
+}
+
+.buy-now{
+    color:white;
+    background-color:rgb(56, 68, 122);
+    padding:1rem 1.5rem;
+    width:50%;
+    align-self: center;
+    margin:1.5rem 0 2rem 0;
+    cursor: pointer;
 }
