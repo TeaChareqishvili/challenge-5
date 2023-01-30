@@ -668,6 +668,7 @@ em{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom:2rem;
 }
 
 .contact-icon{
@@ -682,4 +683,99 @@ em{
     letter-spacing: 1.1px;
     padding: 1rem 0;
     cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    background-color:rgb(48, 47, 47);
+    padding:4rem;
+}
+
+h3{
+    font-family:'Open Sans';
+    font-size:1.5rem;
+    color:azure;
+    font-weight:400;
+    letter-spacing: 1px;
+}
+
+.footer-paragraph{
+    width:300px;
+    font-family:'Open Sans';
+    color:rgb(213, 226, 226);
+    font-weight:200;
+    letter-spacing: 1.3px;
+}
+
+.footer{
+    font-family:'Open Sans';
+    color:rgb(213, 226, 226);
+    font-weight:200;
+    letter-spacing: 1.3px;
+    line-height: 1.6;
+}
+
+.email{
+    padding:1rem;
+    border-radius:12px 0 0 12px;
+    border:none;
+    outline-style: none;
+    color:rgb(58, 93, 159);
+    font-style: italic;
+}
+
+.send-btn{
+    background-color:darkgray;
+    padding:1rem;
+    border-radius:0 12px 12px 0;
+    border:none;
+    cursor:pointer;
+    color:azure;
+}
+::placeholder{
+    color:rgb(58, 93, 159);
+}
+label{
+    display:flex;
+}
+
+.send-btn:hover{
+    background-color:rgb(58, 93, 159);
+    color:azure;
+    font-style: italic;
+}
+
+.border{
+    width:90%;
+    height:1px;
+    background-color:rgb(213, 226, 226);
+    margin:100px auto;
+
+}
+
+.heart-logo{
+    width:25px;
+    height:25px;
+}
+
+.last-line{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.rights{
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  color:rgb(165, 171, 171);
+}
+
+.colorlib{
+    color:rgb(165, 171, 171);
+    font-style:italic;
+
+}
+
+.colorlib:hover{
+    color:rgb(96, 101, 101);
 }
