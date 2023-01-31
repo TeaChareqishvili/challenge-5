@@ -59,7 +59,21 @@ brand.addEventListener('click',()=>{
   })
 })
 
-
+all.addEventListener('click',()=>{
+  imageWeb.forEach((element)=>{
+    element.classList.add('block');
+    
+  })
+  imageDesign.forEach((e)=>{
+   
+    e.classList.add('block');
+  })
+    
+  imageBrand.forEach((elem)=>{
+  
+    elem.classList.add('block');
+  })
+})
 
 
 // first section//
