@@ -86,7 +86,7 @@ const title = document.querySelector('.title');
 const flex = document.querySelector('.flex');
 const aboutTeam = document.querySelector('.about-team');
 const teamParagraph = document.querySelector('.about-team-p');
-const wholeTeam = document.querySelector('.whole-team')
+const teamDiv = document.querySelector('.team-div')
 
 
 
@@ -124,21 +124,23 @@ window.onscroll = function(){
      }
 
      if(top>=1600){
-    wholeTeam.classList.add('opacity');
+      teamDiv.classList.remove('whole-team');
+    teamDiv.classList.add('more-opacity');
      }
      else if(top<=1500){
-      wholeTeam.classList.remove('opacity');
+      teamDiv.classList.remove('more-opacity');
+      teamDiv.classList.add('whole-team');
      }
 
    
-  setInterval(opacity(), 2000)
+   setInterval(opacity(), 2000)
 
 
 }
 
- function opacity(){
-    title.classList.add('title-active');
- }
+  function opacity(){
+     title.classList.add('title-active');
+  }
 
 
 
