@@ -95,7 +95,7 @@ window.onscroll = function(){
       // console.log(top);
      if(top>=100){
        header.classList.add('active');
-       headerDiv.style.color='darkcyan';
+       headerDiv.style.color='rgb(58, 93, 159)';
       link.forEach((e)=>{
         e.classList.add('active-link');
       })
