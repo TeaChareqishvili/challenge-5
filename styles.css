@@ -11,7 +11,9 @@
     height:100vh;
     background-color:rgb(233, 231, 231);
 } 
-
+.hide{
+    display:none;
+}
  /* section 1 */
 
 
@@ -357,6 +359,13 @@ span{
     align-items: center;
     padding-bottom:2rem;
 
+}
+
+.slide-buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:2rem;
 }
 
 .portfolio-btn{
@@ -792,3 +801,71 @@ label{
 .colorlib:hover{
     color:rgb(96, 101, 101);
 }
+
+
+
+
+
+
+@media (max-width:1024px){
+
+    .screen{
+        display:none;
+    }
+
+   .media{
+    display:none;
+   }
+   .buttons{
+    display:flex;
+    flex-direction: column;
+   
+
+}
+
+.portfolio-btn{
+    margin:10px;
+    padding:15px;
+
+
+}
+
+.service{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+} 
+
+#price-section{
+    display:none;
+}
+
+.contact-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-content{
+    padding:30px 0;
+}
+
+.footer-paragraph{
+    width:500px;
+    font-family:'Open Sans';
+    color:rgb(213, 226, 226);
+    font-weight:200;
+    letter-spacing: 1.3px;
+}
+
+.media{
+    display:none;
+}
+
+}
+
+
+
